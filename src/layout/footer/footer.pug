@@ -1,0 +1,53 @@
+footer.bg-primary(style="background-image: url('${require(`./assets/images/footer-mask.png`)}')")
+    .footer-wrapper
+        .container
+            .row
+                .col-sm-2
+                    .footer-logo
+                        img(src="${require(`./assets/images/kizad-logo-reverse.svg`)}")
+                .col-sm-3
+                    .widget-brochure
+                        h4.title Download our brochure
+                        img(src="${require(`./assets/images/contact.png`)}")
+                        p Khalifa Industrial Zone Abu Dhabi [KIZAD], a subsidiary of Abu Dhabi Ports.
+                        +link('#', 'with-icon' ,' Download Brochure ')
+
+                .col-sm-2.footer-link
+                    h4.title Clusters
+                    ul
+                        -var list = ['Food','Metals', 'Polymers', 'Antomotive', 'Oil & Gas', 'Energy', 'Logistics']
+                        each x in list
+                            li=x
+
+                .col-sm-2.footer-link
+                    h4.title Business Facilities
+                    ul
+                        -var list = ['About Land','Pre-build warehouse', 'Light Industrail Units', 'Build to Suit Facilities']
+                        each x in list
+                            li=x
+
+                .col-sm-2.footer-link
+                    h4.title Free Zone
+                    ul
+                        -var list = ['License Types','Dual Licensing', 'Ligal Entity Types', 'KIZAD Entrepreneurship and Incubation Centre']
+                        each x in list
+                            li=x
+
+                .col-sm-1
+                    +button('button', 'btn-secondary' ,' Contact us ') 
+
+
+
+    .footer-copyright.secondary-bg
+        .container
+            .row
+                .col-sm-2.copyright  © KIZAL LLC 2020
+
+                .col-sm-3.term-condition
+                    ul
+                        li
+                            a(href="#") Terms and Conditions
+                        li
+                            a(href="#") Privacy policy
+                .col-sm-7
+                    include ../../tiles/social/social

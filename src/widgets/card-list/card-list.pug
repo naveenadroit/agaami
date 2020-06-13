@@ -1,0 +1,17 @@
+include ../../tiles/button/button
+
+
+section.widget.card-list
+    .card-list__header
+        .card-list__heading
+            h2 widget header
+        .card-list__options
+            a(href="") see all 
+
+    .card-list__content
+        img.card-list__img(src='${require(`./assets/images/kizad-logo.svg`)}', alt='product')
+        p.card-list__text card data here 
+
+    .card-list__footer
+        +button("success")
+        +button

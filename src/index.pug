@@ -1,0 +1,19 @@
+extends layout/layout
+block content
+  -
+    var pages = [
+      {name: 'Home', path:{en:'home-en.html'}}, 
+      //- {name: 'Contact Us', path:{en:'contact-en.html', ar:'contact-ar.html'}},
+      //- {name: 'Component', path:{en:'component-en.html'}}
+    ]
+    
+  div.placeholder
+    div.container.py-5.d-flex
+      ul.w-100.p-4
+        each page in pages
+          li.d-flex.justify-content-between.p-3.border-bottom
+            span= page.name
+            div
+              a.px-5(href=page.path.en) English
+              a(href=page.path.ar) Arabic
+

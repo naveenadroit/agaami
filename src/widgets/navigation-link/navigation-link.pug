@@ -1,0 +1,7 @@
+.anchor-link.navbar-fixed-top(anchor-wrapper)
+    ul
+        -var link = ['About kizad', 'Benifits', 'Products', 'Business Partners', 'Know More', 'Enabling Sustainability', 'FAQ']
+        -var id = ['id1','id2','id3','id4','id5', 'id6','id7']
+        each x in link
+            li
+                a(href=id[x])= x

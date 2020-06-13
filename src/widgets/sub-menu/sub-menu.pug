@@ -1,0 +1,52 @@
+
+include ../../tiles/btn/btn
+include ../../tiles/button/button
+include ../../tiles/link/link
+
+.dropdown-wrapper
+    .simscrollbar
+        .row.grey-bg.cluster-container.no-gutters
+            .col-sm-3.cluster-header
+                h4 Clusters at KIZAD
+            .col-sm-9.cluster-links
+                .row
+                    each x in [1,2,3,4,5,6,7,8]
+                        .col-sm-3
+                            +btn('button', 'with-icon' ,' About Cluster ','device_hub')
+        .row.no-gutters
+            .col-sm-5.secondary-bg
+                include ../../widgets/contact/contact
+            
+            .col-sm-7.primary-bg
+                .row.no-gutters
+                    .col-sm-6.file-container
+                        h3 Key Downloads
+                        each x in [1,2,3]
+                            include ../../tiles/file-download/file-download
+                        +button('button', 'btn-primary  btn-primary--outline' ,' View all brochures ') 
+                    .col-sm-6.file-container
+                        h3 Quick Links
+                        each x in [1,2,3]
+                            include ../../tiles/file-download/file-download
+
+    .dropdown-footer.black-bg
+        include ../../tiles/social/social
+        .language
+            span Choose you language
+            ul
+                li
+                    a(href='#')
+                        img(src="${require(`./assets/images/language/lang1.png`)}")
+                li
+                    a(href='#')
+                        img(src="${require(`./assets/images/language/lang2.png`)}")
+                li
+                    a(href='#')
+                        img(src="${require(`./assets/images/language/lang3.png`)}")
+                li
+                    a(href='#')
+                        img(src="${require(`./assets/images/language/lang4.png`)}")
+                li
+                    a(href='#')
+                        img(src="${require(`./assets/images/language/lang5.png`)}")
+

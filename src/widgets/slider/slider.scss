@@ -1,0 +1,342 @@
+// .ie #banner .text {
+//     overflow: hidden;
+//     h1 {
+//       line-height: 60px;
+//     }
+//   }
+  
+//   [dir=rtl] #banner .swiper-wrapper .swiper-slide video{
+//     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//       right:-50%;
+//     }
+//     @supports (-ms-ime-align:auto) {
+//       right:-50%;
+//     }
+//   }
+  
+//   #banner {
+//     display: block;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//     margin: 0;
+//     .banner__slides {
+//       height: 100vh;
+//       .swiper-container{
+//         .swiper-wrapper{
+//           justify-content: normal;
+//         }
+//       }
+//       .gallery-top{
+//         .swiper-slide{
+//           &:after{
+//             content: '';
+//             position: absolute;
+//             top: 0;
+//             bottom: 0;
+//             left: 0;
+//             right: 0;
+//             background-color: rgba(0, 0, 0, 0.3);
+//             z-index: 0;
+//           }
+//           >.container{
+//             z-index: 2;
+//             height: 100%;
+//           }
+//         }
+//       }
+//     }
+//     .modal{
+//       padding-right:0 !important;
+//       .modal-dialog{
+//         margin: 0;
+//         width:100% !important;
+//         height:100% !important;
+//       }
+//     }
+//     .text {
+//       z-index: 3;
+//       color: $white;
+//       max-width: 470px;
+//       position: absolute;
+//       bottom: 130px;
+//       @include xxl{
+//         max-width: 500px;
+//       }
+//       h2 {
+//         margin: 0 0 16px;
+//       }
+//       p {
+//         opacity: 1;
+//         @include fonts-size($lg-font);
+//         font-weight: $font-normal;
+//         line-height: 28px;
+//         margin: 0 0 24px;
+//         color: $white;
+//       }
+//       .call-actions-wrapper{
+//         display: inline-block;
+//       }
+//       @media(max-width:1024px){
+//         .animate-text.d-none, .call-actions-wrapper{
+//           display:block !important;
+//           opacity: 1 !important
+//         }
+//       }
+      
+//       span {
+//         display: block;
+//         margin: 0;
+//         transition: 0.3s;
+//       }
+//       .btn--link__primary, .btn--link__arrow {
+//         opacity: 1;
+//         transition: opacity 0.2s ease-in 0.2s;
+//       }
+//       .text__icon {
+//         margin-bottom: 10px;
+//       }
+//       .btn--link__primary {
+//         min-width: 190px;
+//         // span {
+//         //   top: 2px;
+//         // }
+//       }
+//     }
+//     .btn--link__arrow {
+//       margin-left: 32px;
+//     }
+//     .swiper-container {
+//       width: 100%;
+//       margin-left: auto;
+//       margin-right: auto;
+//     }
+//     .swiper-slide {
+//       background-size: cover;
+//       background-position: center;
+//       video{
+//         min-height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         // min-width: 100%;
+//         // min-height: 100%;
+//         // width: auto;
+//         // height: auto;
+//       }
+//     }
+  
+//     .animate-text .letter{
+//       display: inline;
+//       }
+    
+  
+//     .gallery-top {
+//       height: 100%;
+//       width: 100%;
+//       .swiper-button-wrapper {
+//         bottom: 0;
+//         z-index: 99;
+//         .btn-swiper {
+//           bottom: 0;
+//           top: 40px;
+//         }
+//       }
+//       .container {
+//         @include vertical-align-all();
+//         position: absolute;
+//         margin: 0;
+  
+//       }
+//     }
+//     .gallery-thumbs {
+//       box-sizing: border-box;
+//       padding: 32px 0 28px 0;
+//       margin-top: -85px;
+//       border-top: 0.5px solid rgba($white, 0.5);
+//       .text {
+//         display: none;
+//       }
+//       .swiper-slide {
+//         height: 100%;
+//         opacity: 1;
+//         color: $white;
+//         cursor: pointer;
+//         text-align: left;
+//       }
+//       .swiper-slide-thumb-active {
+//         opacity: 1;
+//         span {
+//           position: relative;
+//           font-family: $font-bold-ad;
+//           &:after {
+//             content: "";
+//             position: absolute;
+//             border-top: 4px solid $yellowMid;
+//             height: 4px;
+//             width: 100%;
+//             top: -36px;
+//             left: 0;
+//             border-radius: 3px;
+//           }
+//         }
+//       }
+//       .btn-swiper {
+//         top: 45px;
+//         z-index: 999999;
+//       }
+//       .swiper-button-disabled{
+//         pointer-events: all;
+//       }
+//     }
+//     #videoModal{
+//       z-index: 99999999;
+//       .modal-dialog{
+//         width: 90%;
+//         height: 90%;
+//         max-width: 100%;
+//         background: #000;
+//         .modal-content{
+//           background: #000;
+//           height: 100%;
+//           .modal-header{
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             z-index: 99;
+//             border:0;
+//             button{
+//               opacity: 1;
+//               font-size: 28px;
+//               span{
+//                 color: #fff;
+//               }
+//             }
+//           }
+//           .modal-body{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             height: 100%;
+//             video{
+//               height: 100%;
+//               max-width: 100%;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+  
+  
+//   @include mdMax() {
+//     #banner {
+//       height: auto;
+//       overflow: hidden;
+//       .banner__slides {
+//         height: calc(var(--vh, 1vh) * 100);
+//         // height: -moz-available;          /* WebKit-based browsers will ignore this. */
+//         // height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+//         // height: fill-available;
+//         // height: auto;
+//       }
+//       .text {
+//         // display: none;
+//         bottom: 68px;
+//         margin-right: 25px;
+//         h1{
+//           font-size: 42px;
+//           line-height: 42px;
+//           margin-bottom: 16px;
+//         }
+//         //p{
+//         //  display: none;
+//         //}
+//       }
+//       .gallery-top {
+//         // height: 318px;
+//       }
+//       .gallery-thumbs {
+//         // background-color: $white;
+//         border: none;
+//         padding: 32px 0 18px;
+//         margin-top: -50px;
+//         .swiper-slide > span {
+//           display: none;
+//         }
+//         .swiper-button-wrapper {
+//           .swiper-button-next {
+//             right: auto;
+//             left: 29px;
+//           }
+//           .swiper-button-prev {
+//             right: auto;
+//             left: 0px;
+//           }
+//           .btn-swiper {
+//             // border-radius: 20px;
+//             width: 30px;
+//             height: 30px;
+//             display: block !important;
+//             top: 23px;
+//             background: none;
+//             border: 1px solid $white !important;
+//             em{
+//               margin-top: 0px;
+//               color: white;
+//             }
+//           }
+//         }
+//         .text {
+//           display: block;
+//           position: static;
+//           max-width: 100%;
+//           width: 100%;
+//           padding: 0 16px 0 0;
+//           h2 {
+//             font-size: 18px;
+//             color: $steelGrey;
+//             margin-bottom: 8px;
+//             @include xxl{
+//               font-size: 20px;
+//             }
+//           }
+//           p {
+//             font-size: 14px;
+//             line-height: 22px;
+//             color: $steelGrey;
+//             margin-bottom: 15px;
+//             @include xxl{
+//               font-size: 16px;
+//             }
+//           }
+//           .btn--link__arrow {
+//             color: $royalBlue;
+//             text-transform: uppercase;
+//             font-size: 12px;
+//             @include xxl{
+//               font-size: 14px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .banner_slides {
+//       overflow: hidden;
+//     }
+//   }
+  
+  
+//   @media only screen and (max-height: 736px){
+//     #banner{
+//       .text{
+//         h1{
+//           font-size: 38px;
+//         }
+//       }
+//     }
+//   }

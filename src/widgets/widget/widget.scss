@@ -1,0 +1,17 @@
+.widget{
+    >[class$="__header"]{
+        display: flex;
+        justify-content: space-between;
+        >[class$="__heading"]{
+            h2{
+                @include font-size($xxl-font);
+            }
+        }
+    }
+    >[class$="__content"]{
+        
+    }
+    >[class$="__footer"]{
+        
+    }
+}

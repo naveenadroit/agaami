@@ -1,0 +1,16 @@
+//- layout.pug
+doctype html
+html(dir="ltr")
+  head
+    title= title
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  body(data-spy="scroll" data-target=".anchor-link" data-offset="100")
+    block header
+      include header/header.pug
+     
+
+    block content
+    block footer
+      include footer/footer.pug

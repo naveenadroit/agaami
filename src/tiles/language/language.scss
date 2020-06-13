@@ -1,0 +1,26 @@
+.language{
+    display: flex;
+    align-items: center;
+    color:$white;
+    padding: 20px 45px;
+    float: right;
+    span{
+        margin-right: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;;
+    }
+    ul{
+        li{
+            padding:0 !important;
+            margin-right: 10px !important;
+            &:last-child{
+                margin-right: 0px !important;
+            }
+            a{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

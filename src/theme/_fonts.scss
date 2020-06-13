@@ -1,0 +1,51 @@
+//Font OpenSans
+@include fontface(OpenSans, OpenSans, OpenSans, $weight: 400, $style: normal);
+@include fontface(OpenSans, OpenSans, OpenSans-Semibold, $weight: 600, $style: normal);
+@include fontface(OpenSans, OpenSans, OpenSans-SemiboldItalic, $weight: 600, $style: italic);
+@include fontface(OpenSans, OpenSans, OpenSans-Bold, $weight: 700, $style: normal);
+
+//Font Roboto
+@font-face {
+    font-family:"roboto-thin";
+    src:url("./assets/fonts/Roboto/Roboto-Thin.woff") format("woff2"),url("./assets/fonts/Roboto/Roboto-Thin.woff") format("woff"),url("./assets/fonts/Roboto/Roboto-Thin.eot") format("opentype");
+    font-style:normal
+}
+
+@font-face {
+    font-family:"roboto-light";
+    src:url("./assets/fonts/Roboto/Roboto-Light.woff") format("woff2"),url("./assets/fonts/Roboto/Roboto-Light.woff") format("woff"),url("./assets/fonts/Roboto/Roboto-Light.eot") format("opentype");
+    font-style:normal
+}
+
+@font-face {
+    font-family:"roboto-regular";
+    src:url("./assets/fonts/Roboto/Roboto-Regular.woff") format("woff2"),url("./assets/fonts/Roboto/Roboto-Regular.woff") format("woff"),url("./assets/fonts/Roboto/Roboto-Regular.eot") format("opentype");
+    font-style:normal
+}
+
+@font-face {
+    font-family:"roboto-medium";
+    src:url("./assets/fonts/Roboto/Roboto-Medium.woff") format("woff2"),url("./assets/fonts/Roboto/Roboto-Medium.woff") format("woff"),url("./assets/fonts/Roboto/Roboto-Medium.eot") format("opentype");
+    font-style:normal
+}
+
+@font-face {
+    font-family:"roboto-bold";
+    src:url("./assets/fonts/Roboto/Roboto-Bold.woff") format("woff2"),url("./assets/fonts/Roboto/Roboto-Bold.woff") format("woff"),url("./assets/fonts/Roboto/Roboto-Bold.eot") format("opentype");
+    font-style:normal
+}
+
+
+//Font Archive
+    
+@font-face {
+    font-family:"archive-regular";
+    src:url("./assets/fonts/Archive/Archive-Regular.woff") format("woff2"),url("./assets/fonts/Archive/Archive-Regular.woff") format("woff"),url("./assets/fonts/Archive/Archive-Regular.eot") format("opentype");
+    font-style:normal
+}
+
+@font-face {
+    font-family:"archive-bold";
+    src:url("./assets/fonts/Archive/Archive-Bold.woff") format("woff2"),url("./assets/fonts/Archive/Archive-Bold.woff") format("woff"),url("./assets/fonts/Archive/Archive-Bold.eot") format("opentype");
+    font-style:normal
+}

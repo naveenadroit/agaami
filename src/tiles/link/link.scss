@@ -1,0 +1,31 @@
+.link{
+    @include font-size($sm-font);
+    padding:10px 0;
+    color:$secondary;
+    font-family: $font-roboto-regular;
+    &:hover{
+        color:$secondary;
+        text-decoration: underline;
+    }
+    &.disabled{
+        color:$disabled;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &.with-icon{
+        &:after{
+            content: '\2192';
+            margin-left: 15px;
+            font-size: 24px;
+            font-weight: bolder;
+            @include transition(all .55s ease-in-out);
+        }
+        &:hover{
+            text-decoration: none;
+            &:after{
+                margin-left: 25px;
+            }
+        }
+    }
+}

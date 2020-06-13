@@ -1,0 +1,62 @@
+extends layout/layout
+block content
+
+  .placeholder
+    .container
+      .row
+        .col-12
+          h1(style="margin:30px 0 50px;") UI Guidelines
+          h4(style="margin:30px 0;") Grids
+          .row
+            each x in [1,2,3,4,5,6,7,8,9,10,11,12]
+              .col-1
+                span(style="border-radius:4px; background-color: lightgray; width: 100%; height: 50px; display: block; margin-bottom:20px")
+          
+          .row
+            each x in [1,2,3,4,5,6]
+              .col-2
+                span(style="border-radius:4px; background-color: lightgray; width: 100%; height: 50px; display: block; margin-bottom:20px")
+
+          .row
+            each x in [1,2,3]
+              .col-4
+                span(style="border-radius:4px; background-color: lightgray; width: 100%; height: 50px; display: block; margin-bottom:20px")
+
+          .row
+            each x in [1,2]
+              .col-6
+                span(style="border-radius:4px; background-color: lightgray; width: 100%; height: 50px; display: block; margin-bottom:20px")
+
+
+  .placeholder
+    .container.container--big
+      .row
+        .col-12
+          +button('button', 'btn-primary' ,' Contact us ') 
+          +button('button', 'btn-primary disabled' ,' Contact us ') 
+          
+          
+
+
+  .placeholder.placeholder--bg-primary
+    .container.container--small
+      .row
+        .col-12
+          +button('button', 'btn-primary  btn-primary--outline' ,' Contact us ') 
+          +button('button', 'btn-primary disabled' ,' Contact us ') 
+
+
+  .placeholder
+    .container.container--small
+      .row
+        .col-4
+          +link('#', '' ,' Static link ') 
+        .col-4
+          +link('#', 'with-icon' ,' Static link ')
+        .col-4
+          +link('#', 'disabled' ,' Static link ')
+        
+
+          
+
+           

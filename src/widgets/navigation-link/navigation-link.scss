@@ -1,0 +1,26 @@
+.anchor-link{
+    margin: 0 auto;
+    font-family: $font-roboto-regular;
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            padding:0 40px;
+            display: flex;
+            a{
+                @include link-hover;
+                color:$white;
+                padding:30px 0;
+                &:after{
+                    bottom: 0px;
+                }
+                &.active{
+                    &:after{
+                        left:0;
+                        width:100%;
+                    }
+                }
+            }
+        }
+    }
+}

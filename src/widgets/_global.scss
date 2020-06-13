@@ -1,0 +1,52 @@
+body{
+    @include font-size($xs-font);
+    font-weight: lighter;
+    font-family: $font-roboto-regular;
+    line-height: 1.25;
+  }
+  h1,h2,h3,h4,h5,h6{
+      font-family: $font-archive-bold;
+  }
+
+  p{
+    font-family: $font-roboto-light;
+  }
+
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  img{
+    max-width:100%;
+  }
+
+  .grey-bg{
+    background-color: $grey-bg;
+  }
+
+  .primary-bg{
+    background-color: $primary;
+  }
+
+  .secondary-bg{
+    background-color: $secondary;
+  }
+  .white-bg{
+    background-color: $white;
+  }
+  .black-bg{
+    background-color: $black;
+  }
+
+  .title{
+      text-transform: uppercase;
+      letter-spacing: 1.5;
+      @include font-size($sm-font);
+  }
+  ul{
+    margin: 0;
+    padding:0;
+  }
+  

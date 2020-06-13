@@ -1,0 +1,64 @@
+include ../../tiles/primayLinkButton/primayLinkButton
+include ../../tiles/linkarrow/linkarrow
+
+section.widget.banner#banner
+    .banner__content
+        .banner__slides
+            .swiper-container.gallery-top.d-none.d-sm-block
+                .swiper-wrapper
+                    .swiper-slide
+                        video(src="src/assets/videos/carousel1.mp4", autoplay, loop, muted, preload="auto", playsinline)
+                        .container
+                            .text(data-aos="fade-up",data-aos-offset="-400",data-aos-easing="ease-in-sine" data-aos-duration="700" data-aos-once="false")
+                                h1.animate-text.d-none ADIPEC Conference 2020
+                                p.animate-text.d-none Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                .call-actions-wrapper
+                                    button(class= 'btn btn--link__primary' ,data-video-toggler data-target="#videoModal" data-video-src-url='http://adnoc.v2.omniaconnect.net/-/media/adnoc-v2/videos/energy-for-life/adnoc_90sec_eng_mp.ashx?la=en' )
+                                        span Watch Video
+                                    + arrowButton("Learn More")
+                    each item in [0,1,2,3,4]
+                        .swiper-slide(style="background-image: url( 'http://adnoc.v2.omniaconnect.net/-/media/adnoc-v2/images/homepage/adnoc_efl_website-banners-1800x1200pix_opportunity_en-2.ashx' )")
+                            .container
+                                .text
+                                    h1.animate-text.d-none ADIPEC Conference 2019
+                                    p.animate-text.d-none Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                    .call-actions-wrapper
+                                        + primaryLinkButton("Register Now")
+                                        + arrowButton("Learn More")
+            .swiper-container.gallery-top.d-sm-none
+                .swiper-wrapper
+                    each item in [0,1,2,3,4]
+                        .swiper-slide(style="background-image: url( 'http://adnoc.v2.omniaconnect.net/-/media/adnoc-v2/images/homepage/adnoc_efl_website-banners-1800x1200pix_opportunity_en-2.ashx' )")
+                            .container
+                                .text
+                                    h1.animate-text.d-none ADIPEC Conference 2019
+                                    p.animate-text.d-none Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                    .call-actions-wrapper
+                                        + primaryLinkButton("Register Now")
+
+            - let text = [ "Energy For Vision", "Energy for Exploration", "Energy For Opportunity", "Energy for Inclusion", "Energy For Inspiration ", "Energy for Creativity"]; 
+            .container
+                .swiper-container.gallery-thumbs
+                    .swiper-wrapper
+                        each item in text
+                            .swiper-slide
+                                span= item
+                                //- .text
+                                    h2= item
+                                    p Today, the UAE is coordinating an ambitious National Space Program, which is creating extraordinary opportunities for pioneering UAE Nationals such as Hazza Al Mansouri.
+                                    .call-actions-wrapper
+                                        + primaryLinkButton("watch video")
+                                        + arrowButton("Learn More")
+                    .container
+                        include ../../tiles/swiper-buttons/swiper-buttons
+
+
+    #videoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    //- h5#exampleModalLabel.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                .modal-body
+                    video(src="",controls)

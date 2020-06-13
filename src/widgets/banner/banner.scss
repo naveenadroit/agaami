@@ -1,0 +1,34 @@
+.banner{
+    position: relative;
+    color:$white;
+    height:700px;
+    overflow: hidden;
+    video{
+        width:100%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        z-index: -1;
+    }
+    .container{
+        .text{
+            padding-top:40px;
+            @include lg{
+                width:65%;
+                padding-top:120px;
+            }
+            h1{
+                @include font-size($xxxxl-font);
+                margin-bottom: 40px;
+                @include line-height($xxxxl-line-height);
+            }
+            p{
+                @include font-size($xl-font);
+                line-height: 42px;
+                @include line-height($xxl-line-height);
+                font-family: $font-roboto-regular;
+            }
+        }
+    }
+}
